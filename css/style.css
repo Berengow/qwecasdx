@@ -1,0 +1,297 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* блок отвечающий за панораму */
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* блок отвечающий за изображения на слайдере */
+#block_1 {
+  background-image: url("/изображенияАудиторий/СomputerСlass\(111\)-min.png");
+  background-size: 100% 100%;
+}
+
+#block_2 {
+  background-image: url("/изображенияАудиторий/Library-min.png");
+  background-size: 100% 100%;
+}
+
+#block_3 {
+  background-image: url("/изображенияАудиторий/HonorBoardTeachers-min.png");
+  background-size: 100% 100%;
+}
+
+/* слайдер */
+.menu {/* контейнер для слайдера */
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container {/* сам слайдер */
+  width: 75%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.swiper-slide { /* карточки слайдера */
+  min-width: 149px;
+  max-width: 150px;
+  border-radius: 6px;
+  -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.swiper-wrapper {
+  width: 100px;
+}
+
+.swiper-slide p { /* текст у карточек слайдера */
+  color: rgba(255, 255, 255, 0.747);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.377);
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.swiper-slide:hover {
+  -webkit-filter: contrast(140%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* шапка сайта */
+header { /* сам блок шапки */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.logo {/* блок в котором располагаются ссылки на различные ресурсы института */
+  width: 75%;
+  display: flex;
+  align-items: center;
+
+  -webkit-align-items: center;
+  margin-left: 20px;
+}
+
+.logo a {/* ссылки на различные ресурсы института */
+  margin-right: 20px;
+}
+
+.logo_servis {/* блок в которм находятся необходиммые модули библиотеки panolens (настройки, полноэкранный режим) */
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: end;
+  width: 25%;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*блок с видео отображаемый после нажатия infopost */
+#desc-container {
+  max-width: 400px;
+  max-height: 201px;
+  margin-top: 70px;
+  background: #fff;
+  color: #000;
+  border-radius: 3px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#desc-container > iframe {/*настройка отображения ведео файла */
+  border: none;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+.text {
+  padding: 0 20px 20px 20px;
+}
+
+
+
+
+
+
+
+
+/*отображение генерируемых библиотекой изображений */
+#container > div:nth-child(3) {
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0));
+  display: flex;
+  justify-content: end;
+  position: absolute; 
+  top: 0; 
+  height: 100px;
+  width: 100px;
+  width: 100%;
+  height: 44px;
+  float: none;
+  transform: none;
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+  transition: none;
+  pointer-events: none;
+}
+
+
+#container > div:nth-child(3) > span:nth-child(1){
+    position: relative;
+}
+
+
+#container > div:nth-child(3) > span:nth-child(5){
+  position: relative;
+  right: 157px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*версия для телефонов */
+@media only screen and (max-device-width: 480px) {
+  .swiper-container {
+    width: 100%;
+    height: 85%;
+  }
+
+  .menu {
+    height: 250px;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  #block_1 {
+    min-width: 300px;
+    max-height: 170px;
+    border-radius: 15px;
+    font-size: 40px;
+  }
+
+  #block_2 {
+    min-width: 300px;
+    max-height: 170px;
+    border-radius: 15px;
+    font-size: 40px;
+  }
+
+  #block_3 {
+    min-width: 300px;
+    max-height: 170px;
+    border-radius: 15px;
+    font-size: 40px;
+  }
+
+  .logo {
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: end;
+    -webkit-align-items: center;
+  }
+  .logo a {
+    padding-bottom: 40px;
+  }
+
+  .blocImgone {
+    width: 170px;
+    height: 170px;
+  }
+
+  .blocImgtwoo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .blocImgthree {
+    width: 130px;
+    height: 100px;
+  }
+  #container > div:nth-child(3) {
+    display: none;
+  }
+
+  #Vertical img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #Vertical {
+    z-index: 289;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 289;
+  }
+}
+
+
+

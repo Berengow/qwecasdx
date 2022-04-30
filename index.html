@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pano</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div id="container"></div> <!-- модуль отображения панорам -->
+
+  <!-- блок с видео отображаемый после нажатия infopost -->
+  <div id="desc-container" style="display:none">
+    <iframe src="https://www.youtube.com/embed/D7icsuamx5E"></iframe>
+    <div class="title">China's Forgotten War</div>
+    <div class="text">WWII came to the small town of Tai’erzhuang in central China – and it was never the same again.
+      The town was strategically placed, on the north-south transport railway corridor and the ancient Grand Canal, and
+      so was a focus of the Japanese Imperial army as it advanced. Li Jing Shan was only a child when his family fled
+      the fighting. They returned to find their home, and most of the town, in ruins.</div>
+  </div>
+
+  <!-- "шапка сайта" с отображением ссылок на ресурсы -->
+  <header id="header">
+    <div class="logo">
+      <a href="https://rb.asu.ru/">
+        <img class="blocImgone" src="/логотипы/AguLogo.png" width="50px" height="50px" />
+      </a>
+      <a href="">
+        <img class="blocImgtwoo" src="/логотипы/Sound-min.png" width="30px" height="30px" />
+      </a>
+      <a href="https://t.me/rb_asu_ru">
+        <img class="blocImgthree" src="/логотипы/Telegram-min.png" width="40px" height="33px" />
+      </a>
+    </div>
+  </div>
+
+  </header>
+
+  <!-- блок который отображает иззображение (поворот экрана) Только для мобильных устройств -->
+  <div id="Vertical"><img src="/Vertical vid-min.gif" /></div>
+
+  <!-- Слайдер(меню панорам) -->
+  <!-- Slider main container -->
+  <div class="menu">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div id="block_1" class="swiper-slide block" onclick="link1()">
+          <p>Slide 1
+          </p>
+        </div>
+        <div id="block_2" class="swiper-slide  block" onclick="link2()">
+          <p>Slide 2
+          </p>
+        </div>
+        <div id="block_3" class="swiper-slide block" onclick="link3()">
+          <p>Slide 3
+          </p>
+        </div>
+        <div id="block_1" class="swiper-slide block" onclick="link1()">
+          <p>Slide 4
+          </p>
+        </div>
+        <div id="block_2" class="swiper-slide  block" onclick="link2()">
+          <p>Slide 5
+          </p>
+        </div>
+        <div id="block_3" class="swiper-slide block" onclick="link3()">
+          <p>Slide 6
+          </p>
+        </div>
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+    <!-- кнопки навигации слайдера -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+
+  <!-- ссылки на js файлы и репозитории github -->
+  <script src='https://pchen66.github.io/js/three/three.min.js'></script>
+  <script src='https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js'></script><script  src="./script.js"></script>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/slider.js"></script>
+</body>
+
+</html>
